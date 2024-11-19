@@ -14,14 +14,7 @@ struct ContentView: View {
     var body: some View {
         ZStack {
             
-        
-            LinearGradient(colors: [
-                .blue,
-                Color(red: 139/255, green: 80/255, blue: 240/255)
-            ],
-                startPoint: .topLeading, endPoint: .bottomTrailing)
-                .opacity(0.3)
-                .ignoresSafeArea()
+            BackgroundView()
             
             VStack(alignment: .leading) {
                 
@@ -33,7 +26,6 @@ struct ContentView: View {
                 MessagesView()
                 
                 Spacer()
-                
             }
             .padding()
         }

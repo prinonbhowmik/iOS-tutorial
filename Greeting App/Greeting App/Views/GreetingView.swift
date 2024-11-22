@@ -1,7 +1,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct GreetingView: View {
     
     let data: [DataModel] = [
         .init(text: "Prinon Bhowmik", color: Color.red,textColor: .black),
@@ -33,5 +33,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    GreetingView()
 }

@@ -1,14 +1,14 @@
 //
-//  Greeting_AppApp.swift
-//  Greeting App
+//  SwiftUI_BasicsApp.swift
+//  SwiftUI Basics
 //
-//  Created by Prinon bhowmik on 11/19/24.
+//  Created by Prinon bhowmik on 11/21/24.
 //
 
 import SwiftUI
 
 @main
-struct Greeting_AppApp: App {
+struct SwiftUI_BasicsApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()

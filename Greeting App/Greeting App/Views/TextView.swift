@@ -41,5 +41,7 @@ struct TextView: View {
 }
 
 #Preview {
-    TextView(text: "Hello World", color: Color.red, textColor: .blue)
+    VStack{
+        TextView(text: "Hello World", color: Color.red, textColor: .blue)
+    }
 }

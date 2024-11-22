@@ -8,8 +8,17 @@
 import SwiftUI
 
 struct VerticalTextView: View {
+    @State private var subtitle :LocalizedStringKey = "Tap here to start"
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack(alignment: .leading){
+            
+            GreetingTextView(subtitle: $subtitle)
+            
+            RotatableCircleView()
+                
+            Spacer()
+        }.padding()
     }
 }
 

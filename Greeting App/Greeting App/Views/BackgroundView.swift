@@ -9,7 +9,14 @@ import SwiftUI
 
 struct BackgroundView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        LinearGradient(colors: [
+            .blue,
+            Color(red: 110/255, green: 80/255, blue: 240/255)
+        ],
+            startPoint: .topLeading, endPoint: .bottomTrailing)
+            .opacity(0.3)
+            .ignoresSafeArea()
+        
     }
 }
 

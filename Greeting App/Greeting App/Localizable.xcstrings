@@ -4,6 +4,9 @@
     "" : {
 
     },
+    "Arabic" : {
+
+    },
     "Arpita Ghosh Chowdhury" : {
       "localizations" : {
         "ar" : {
@@ -48,6 +51,12 @@
         }
       }
     },
+    "Click on the text & circle" : {
+
+    },
+    "English" : {
+
+    },
     "Exploring iOS Programming" : {
       "localizations" : {
         "ar" : {
@@ -91,6 +100,9 @@
           }
         }
       }
+    },
+    "French" : {
+
     },
     "Greeting" : {
       "localizations" : {
@@ -158,28 +170,6 @@
         }
       }
     },
-    "Hello World" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "مرحبا بالعالم"
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Bonjour le monde"
-          }
-        },
-        "hi" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "हैलो वर्ल्ड"
-          }
-        }
-      }
-    },
     "Hello World is not enough, we need to learn SwiftUI" : {
       "localizations" : {
         "ar" : {
@@ -201,6 +191,9 @@
           }
         }
       }
+    },
+    "Hindi" : {
+
     },
     "iOS is really fun. Right?" : {
       "localizations" : {
@@ -311,6 +304,9 @@
           }
         }
       }
+    },
+    "Text will change & circle will animated" : {
+
     }
   },
   "version" : "1.0"

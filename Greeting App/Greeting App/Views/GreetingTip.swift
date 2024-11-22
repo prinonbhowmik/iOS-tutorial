@@ -1,8 +1,16 @@
-//
-//  GreetingTip.swift
-//  Greeting App
-//
-//  Created by Prinon bhowmik on 11/21/24.
-//
 
 import Foundation
+import TipKit
+
+struct GreetingTip :Tip{
+    var title: Text {
+        Text("Click on the text & circle")
+    }
+    
+    var message: Text? {
+        Text("Text will change & circle will animated")
+    }
+    var asset: Image? {
+        Image(systemName: "questionmark.app.dashed")
+    }
+}

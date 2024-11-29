@@ -9,13 +9,21 @@ import SwiftUI
 
 struct ScrollTransitionExample1: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
+        ScrollView(.horizontal){
+            HStack(spacing: 10){
+                ForEach(images, id: \.self){ img in
+                    ZStack {
+                        MyImageView(name: img)
+                            .scrollTransition(axis : .horizontal){ content, phase in
+                                let value = phase.value
+                                
+                                return content .opacity(value + 1)
+                            }
+                    }
+                    .containerRelativeFrame(.horizontal)
+                }
+            }
+        }.scrollIndicators(.hidden)
     }
 }
 

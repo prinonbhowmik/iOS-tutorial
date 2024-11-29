@@ -11,7 +11,7 @@ import SwiftUI
 struct Scroll_Transitions_Visual_EffectsApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ScrollTransitionExample1()
         }
     }
 }

@@ -8,11 +8,25 @@
 import SwiftUI
 
 struct MyImageView: View {
+    
+    let name : String
+    let mxWidth : CGFloat?
+    
+    init(name: String, mxWidth: CGFloat? = nil) {
+        self.name = name
+        self.mxWidth = mxWidth
+    }
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Image(name)
+            .resizable()
+            .scaledToFit()
+            .clipShape(.rect(cornerRadius: 20))
+            .padding()
+            .frame(maxWidth: mxWidth)
     }
 }
 
 #Preview {
-    MyImageView()
+    MyImageView(name: "tree")
 }

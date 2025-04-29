@@ -30,4 +30,8 @@ class ViewModel {
         decoder.dateDecodingStrategy = .secondsSince1970
         return try decoder.decode(Item.self, from: data)
     }
+    
+    enum TheError: Error {
+        case invalidURL
+    }
 }
